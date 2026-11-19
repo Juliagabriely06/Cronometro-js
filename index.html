@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cronômetro com voltas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="display">
+      <div id="total" class="display__total">00:00.00</div>
+      <div id="current" class="display__current">Volta atual 00:00.00</div>
+    </section>
+
+    <div class="controls">
+      <button id="toggle" class="btn btn--primary">Iniciar</button>
+      <button id="lap" class="btn" disabled>Volta</button>
+      <button id="reset" class="btn" disabled>Zerar</button>
+    </div>
+
+    <div class="options">
+      <label>
+        <input type="checkbox" id="sound" checked>
+        Som nos botões
+      </label>
+      <span id="count">0 voltas</span>
+    </div>
+
+    <div id="laps-head" class="lap-row lap-row--head" hidden>
+      <span>Volta</span>
+      <span>Tempo</span>
+      <span>Total</span>
+      <span></span>
+    </div>
+
+    <p id="empty" class="empty">Inicie o cronômetro e toque em Volta para registrar parciais.</p>
+    <ol id="laps" class="laps"></ol>
+
+    <p class="hint">Atalhos: Espaço inicia/pausa, L registra volta, R zera.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
