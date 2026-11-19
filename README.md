@@ -65,3 +65,7 @@ cronometro/
 ## Tecnologias
 
 HTML5, CSS3 e JavaScript (ES6+).
+
+## Autoria
+
+Feito por Julia (@juliagabriely06).
